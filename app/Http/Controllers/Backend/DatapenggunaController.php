@@ -86,7 +86,7 @@ class DatapenggunaController extends Controller
                 'password' => $request->password,
             ];
 
-            $email =  Mail::to($request->email)->send(new Email($email));
+            // $email =  Mail::to($request->email)->send(new Email($email));
 
             $siswa = Siswa::create([
                 'user_id' => $user->id,
